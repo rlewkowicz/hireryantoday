@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1">
+	<script>window.onload = function () {
+			var mvp = document.getElementById('myViewport');
+			mvp.setAttribute('content','width=580');
+			try{
+			expandMain();
+			jQuery(".diagram-blurb").resizeText();
+			}catch{}
+		}</script> 
+	<title>How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API - Hire Ryan Today</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.1.10 -->
+		<meta name="description" content="Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html/css/js diagram that">
+		<meta name="robots" content="max-image-preview:large">
+		<link rel="canonical" href="https://HireRyan.Today/2021/08/30/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api/">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="Hire Ryan Today - The Homepage of Ryan Lewkowicz">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API - Hire Ryan Today">
+		<meta property="og:description" content="Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html/css/js diagram that">
+		<meta property="og:url" content="https://HireRyan.Today/2021/08/30/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api/">
+		<meta property="og:image" content="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1.jpg">
+		<meta property="article:published_time" content="2021-08-30T12:42:19+00:00">
+		<meta property="article:modified_time" content="2021-11-08T19:17:49+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API - Hire Ryan Today">
+		<meta name="twitter:description" content="Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html/css/js diagram that">
+		<meta name="twitter:image" content="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1.jpg">
+		<script type="application/ld+json" class="aioseo-schema">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/HireRyan.Today\/#website","url":"https:\/\/HireRyan.Today\/","name":"Hire Ryan Today","description":"The Homepage of Ryan Lewkowicz","inLanguage":"en-US","publisher":{"@id":"https:\/\/HireRyan.Today\/#organization"}},{"@type":"Organization","@id":"https:\/\/HireRyan.Today\/#organization","name":"Hire Ryan Today","url":"https:\/\/HireRyan.Today\/","logo":{"@type":"ImageObject","@id":"https:\/\/HireRyan.Today\/#organizationLogo","url":"http:\/\/hireryan.today\/wp-content\/uploads\/2021\/08\/cropped-hireryanprofile.jpg"},"image":{"@id":"https:\/\/HireRyan.Today\/#organizationLogo"}},{"@type":"BreadcrumbList","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/HireRyan.Today\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/","name":"Home","description":"[display-posts posts_per_page=\"1\"]","url":"https:\/\/HireRyan.Today\/"},"nextItem":"https:\/\/HireRyan.Today\/2021\/#listItem"},{"@type":"ListItem","@id":"https:\/\/HireRyan.Today\/2021\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/2021\/","name":"2021","url":"https:\/\/HireRyan.Today\/2021\/"},"nextItem":"https:\/\/HireRyan.Today\/2021\/08\/#listItem","previousItem":"https:\/\/HireRyan.Today\/#listItem"},{"@type":"ListItem","@id":"https:\/\/HireRyan.Today\/2021\/08\/#listItem","position":3,"item":{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/2021\/08\/","name":"August","url":"https:\/\/HireRyan.Today\/2021\/08\/"},"nextItem":"https:\/\/HireRyan.Today\/2021\/08\/30\/#listItem","previousItem":"https:\/\/HireRyan.Today\/2021\/#listItem"},{"@type":"ListItem","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/#listItem","position":4,"item":{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/","name":"30","url":"https:\/\/HireRyan.Today\/2021\/08\/30\/"},"nextItem":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#listItem","previousItem":"https:\/\/HireRyan.Today\/2021\/08\/#listItem"},{"@type":"ListItem","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#listItem","position":5,"item":{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/","name":"How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API","description":"Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html\/css\/js diagram that","url":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/"},"previousItem":"https:\/\/HireRyan.Today\/2021\/08\/30\/#listItem"}]},{"@type":"Person","@id":"https:\/\/HireRyan.Today\/author\/admin\/#author","url":"https:\/\/HireRyan.Today\/author\/admin\/","name":"admin","image":{"@type":"ImageObject","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/b58996c504c5638798eb6b511e6f49af?s=96&d=mm&r=g","width":96,"height":96,"caption":"admin"}},{"@type":"WebPage","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#webpage","url":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/","name":"How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API - Hire Ryan Today","description":"Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html\/css\/js diagram that","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/HireRyan.Today\/#website"},"breadcrumb":{"@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#breadcrumblist"},"author":"https:\/\/HireRyan.Today\/author\/admin\/#author","creator":"https:\/\/HireRyan.Today\/author\/admin\/#author","datePublished":"2021-08-30T12:42:19+00:00","dateModified":"2021-11-08T19:17:49+00:00"},{"@type":"BlogPosting","@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#blogposting","name":"How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API - Hire Ryan Today","description":"Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox First note that this is not plugins, site builders, copy paste. This is a pure html\/css\/js diagram that","inLanguage":"en-US","headline":"How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API","author":{"@id":"https:\/\/HireRyan.Today\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/HireRyan.Today\/#organization"},"datePublished":"2021-08-30T12:42:19+00:00","dateModified":"2021-11-08T19:17:49+00:00","articleSection":"Career, Kubernetes","mainEntityOfPage":{"@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#webpage"},"isPartOf":{"@id":"https:\/\/HireRyan.Today\/2021\/08\/30\/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api\/#webpage"},"image":{"@type":"ImageObject","@id":"https:\/\/HireRyan.Today\/#articleImage","url":"http:\/\/hireryan.today\/wp-content\/uploads\/2021\/08\/cropped-hireryanprofile.jpg"}}]}</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="Hire Ryan Today &raquo; Feed" href="https://HireRyan.Today/feed/">
+<link rel="alternate" type="application/rss+xml" title="Hire Ryan Today &raquo; Comments Feed" href="https://HireRyan.Today/comments/feed/">
+<link rel="stylesheet" id="wp-block-library-css" href="https://HireRyan.Today/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1" media="all">
+<style id="wp-block-library-theme-inline-css">.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--green: #D1E4DD;--wp--preset--color--blue: #D1DFE4;--wp--preset--color--purple: #D1D1E4;--wp--preset--color--red: #E4D1D1;--wp--preset--color--orange: #E4DAD1;--wp--preset--color--yellow: #EEEADD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--purple-to-yellow: linear-gradient(160deg, #D1D1E4 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-purple: linear-gradient(160deg, #EEEADD 0%, #D1D1E4 100%);--wp--preset--gradient--green-to-yellow: linear-gradient(160deg, #D1E4DD 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(160deg, #EEEADD 0%, #D1E4DD 100%);--wp--preset--gradient--red-to-yellow: linear-gradient(160deg, #E4D1D1 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-red: linear-gradient(160deg, #EEEADD 0%, #E4D1D1 100%);--wp--preset--gradient--purple-to-red: linear-gradient(160deg, #D1D1E4 0%, #E4D1D1 100%);--wp--preset--gradient--red-to-purple: linear-gradient(160deg, #E4D1D1 0%, #D1D1E4 100%);--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="rbuilder-styling-css" href="https://HireRyan.Today/wp-content/plugins/resume-builder/dist/main.css?ver=3.1.1" media="all">
+<link rel="stylesheet" id="twenty-twenty-one-style-css" href="https://HireRyan.Today/wp-content/themes/twentytwentyone/style.css?ver=1.3" media="all">
+<style id="twenty-twenty-one-style-inline-css">@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+				div.wpforms-container-full .wpforms-form input[type=checkbox] {
+					-webkit-appearance: checkbox;
+					-moz-appearance: checkbox;
+				}
+				div.wpforms-container-full .wpforms-form input[type=radio] {
+					-webkit-appearance: radio;
+					-moz-appearance: radio;
+				}
+				div.wpforms-container-full .wpforms-form input[type=checkbox]:after,
+				div.wpforms-container-full .wpforms-form input[type=radio]:after {
+					content: none;
+				}
+			}
+div.wpforms-container-full form.wpforms-form select {
+				background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%2328303d'><polygon points='0,0 10,0 5,5'/></svg>");
+				background-repeat: no-repeat;
+				background-position: right var(--form--spacing-unit) top 60%;
+			}</style>
+<link rel="stylesheet" id="twenty-twenty-one-print-style-css" href="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.3" media="print">
+<link rel="stylesheet" id="enlighterjs-css" href="https://HireRyan.Today/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=0A0B0C" media="all">
+<link rel="stylesheet" id="__EPYT__style-css" href="https://HireRyan.Today/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.1.4.1" media="all">
+<style id="__EPYT__style-inline-css">.epyt-gallery-thumb {
+                        width: 33.333%;
+                }</style>
+<script src="https://HireRyan.Today/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://HireRyan.Today/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/js/bootstrap.min.js?ver=1" id="bootstrap-js"></script>
+<script src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1" id="primary-navigation-script-js"></script>
+<script id="__ytprefs__-js-extra">var _EPYT_ = {"ajaxurl":"https:\/\/HireRyan.Today\/wp-admin\/admin-ajax.php","security":"90b2fced8f","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/HireRyan.Today\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/HireRyan.Today\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs__\"]","epdovol":"1","version":"14.1.4.1","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"1","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};</script>
+<script src="https://HireRyan.Today/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.1.4.1" id="__ytprefs__-js"></script>
+<link rel="https://api.w.org/" href="https://HireRyan.Today/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="https://HireRyan.Today/wp-json/wp/v2/posts/119">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://HireRyan.Today/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.1">
+<link rel="shortlink" href="https://HireRyan.Today/?p=119">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://HireRyan.Today/wp-json/oembed/1.0/embed?url=https%3A%2F%2FHireRyan.Today%2F2021%2F08%2F30%2Fhow-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://HireRyan.Today/wp-json/oembed/1.0/embed?url=https%3A%2F%2FHireRyan.Today%2F2021%2F08%2F30%2Fhow-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api%2F#038;format=xml">
+<meta name="generator" content="Site Kit by Google 1.72.0">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="icon" href="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-logo-search-grid-desktop-32x32.png" sizes="32x32">
+<link rel="icon" href="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-logo-search-grid-desktop-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-logo-search-grid-desktop-180x180.png">
+<meta name="msapplication-TileImage" content="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-logo-search-grid-desktop-270x270.png">
+</head>
+
+<body class="post-template-default single single-post postid-119 single-format-standard wp-custom-logo wp-embed-responsive is-light-theme no-js singular has-main-navigation">
+<div class="full-background"></div>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+<header id="masthead" class="site-header container-0 has-logo has-title-and-tagline has-menu" role="banner">
+
+	<div class="navbar-wrapper-small d-lg-none"> 
+	<nav class="navbar-small navbar-light">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbarNav-small" id="navbarNav">
+				<button class="navbar-toggler navbar-toggler-internal" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				</button>
+				<ul class="navbar-nav">
+					<li class="close-button">
+						Close 
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://HireRyan.Today/">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://HireRyan.Today/about">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://HireRyan.Today/blog">Blog</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://HireRyan.Today/calendar">Calendar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+	
+<div class="header-bar">
+	<div class="header-bar-wrapper row">
+		<div class="col-1 col-md-2 col-md-1 offset-md-1 offset-lg-1">
+			<div class="header-logo-wrapper col-1">
+				<a href="https://HireRyan.Today/" class="a-img-wrapper">
+					<img src="http://hireryan.today/wp-content/uploads/2021/08/hireryanlogo.png" class="header-logo-image">
+				</a>
+			</div>
+		</div>
+		<div class="col-5 offset-sm-3 offset-md-0">
+			<div class="col-12 d-none d-lg-block">
+				<nav class="primary-navigation navbar-expand-md navbar-light bg-light ms-auto me-auto">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+							<a class="nav-link" href="https://HireRyan.Today/">Home</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="https://HireRyan.Today/about">About</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="https://HireRyan.Today/blog">Blog</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="https://HireRyan.Today/calendar">Calendar</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-12 d-lg-none d-none d-sm-block">
+				<div class="search-wrapper-small">
+					<form role="search" method="get" class="search-form" action="https://HireRyan.Today/">
+	<label for="search-form-1">Search&hellip;</label>
+	<li-icon class="search-icon-wrapper">
+		<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="search-icon" width="16" height="16" focusable="false">
+			<path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+		</svg>	
+	</li-icon>
+	<input type="search" id="search-form-1" class="search-box" value="" name="s">
+	<input type="submit" class="search-submit" value="Search">
+</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="col-12 d-none d-lg-block">
+				<div class="search-wrapper-large">
+					<form role="search" method="get" class="search-form" action="https://HireRyan.Today/">
+	<label for="search-form-2">Search&hellip;</label>
+	<li-icon class="search-icon-wrapper">
+		<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="search-icon" width="16" height="16" focusable="false">
+			<path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+		</svg>	
+	</li-icon>
+	<input type="search" id="search-form-2" class="search-box" value="" name="s">
+	<input type="submit" class="search-submit" value="Search">
+</form>
+				</div>
+			</div>
+		</div>			
+	</div>
+</div>
+
+	
+
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+<!-- <script>window.scrollTo(0,0)</script> -->
+
+<article id="post-119" class="post-119 post type-post status-publish format-standard hentry category-career category-kubernetes entry">
+	<div class="container main-container">
+		<div class="row main-row">
+			<div class="col-lg-3 col-12 ms-auto me-auto left-placeholder">
+				<div class="user-profile">
+				<div class="profile-photo-container">
+					<div class="profile-photo-upper">
+
+					</div>
+					<div class="profile-photo">
+						<a href="https://HireRyan.Today/" class="custom-logo-link" rel="home"><img width="1396" height="1983" src="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1.jpg" class="custom-logo" alt="Hire Ryan Today" decoding="async" fetchpriority="high" srcset="https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1.jpg 1396w, https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1-211x300.jpg 211w, https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1-721x1024.jpg 721w, https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1-768x1091.jpg 768w, https://HireRyan.Today/wp-content/uploads/2021/08/cropped-hireryanprofile-1-1081x1536.jpg 1081w" sizes="(max-width: 1396px) 100vw, 1396px"></a>					</div>
+					<div class="profile-photo-lower">
+					<div class="ln-logo-container">
+						<a href="https://www.linkedin.com/in/ryan-lewkowicz-a041053a/"><img src="https://HireRyan.Today/wp-content/themes/twentytwentyone/ln.png"></a>
+					</div>
+					<div class="gh-logo-container">
+						<a href="https://github.com/rlewkowicz/"><img src="https://HireRyan.Today/wp-content/themes/twentytwentyone/GitHub_Logo.png"></a>
+					</div>
+						<div class="profile-header">
+						The Homepage of 
+						<br>
+						<div class="name">
+						Ryan Lewkowicz
+						</div>
+						<hr class="blurb-break">
+						<div class="blurb">
+							Hi! I'm Ryan Lewkowicz and this is my website.
+							<br>
+							<br>
+							I'm a world class technologist with an extensive career spanning some of the largest companies on the planet. I'm into all things k8s. If you want to know more about my career, check out my about page for my resume etc. You can also pick up some cool tricks from my blog.
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div>
+									<div id="left-sidebar" class="left-sidebar d-none d-lg-block">
+					
+		<div id="recent-posts-5" class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+<nav aria-label="Recent Posts">
+		<ul>
+											<li>
+					<a href="https://HireRyan.Today/2023/01/02/just-a-better-gaming-chair-honestly-destiny-2-aim-bot-using-yolov5/">Just a Better Gaming Chair Honestly &#8211; Destiny 2 Aim Bot Using Yolov5</a>
+									</li>
+											<li>
+					<a href="https://HireRyan.Today/2022/04/09/209/">Deleting Route 53 Zones That Contain Records</a>
+									</li>
+											<li>
+					<a href="https://HireRyan.Today/2022/03/09/avoiding-shell-quote-hell-and-managing-interpolation-in-nested-quotes/">Avoiding Shell Quote Hell And Managing Interpolation in Nested Quotes</a>
+									</li>
+											<li>
+					<a href="https://HireRyan.Today/2021/11/15/managing-multiple-kube-config-files/">Managing Multiple Kube Config Files</a>
+									</li>
+											<li>
+					<a href="https://HireRyan.Today/2021/10/04/modifying-docker-image-layers-in-real-time-on-macos/">Modifying Docker Image Layers in Real Time on Macos</a>
+									</li>
+					</ul>
+
+		</nav>
+</div>					</div>
+								</div>
+			</div>
+			<div class="center-column col-12 col-lg-9 px-3">
+				<div class="row">
+					<div class="col-12">
+				<div class="entry-content-wrapper">
+				<script>function printDiv(divName) {
+					var originalContents = document.body.innerHTML;
+					try {
+						document.getElementsByClassName("rb-template-container")[0].classList.add("print-style");
+					}
+					catch(err) {
+					}
+					var printContents = document.getElementById(divName).innerHTML;					
+
+					document.body.innerHTML = printContents;
+					window.print();
+					document.body.innerHTML = originalContents;
+					}</script>
+				<div id="print-button-wrapper">
+				<input id="print-button" type="button" onclick="printDiv('printableArea')" value="Print">	
+				</div>
+				<div class="entry-content" id="printableArea">
+				
+				
+
+					<div class="standard-page-title">How to Achieve Cloud Agnostic Application Deployments With Kubernetes and the Open Service Broker API:</div>
+<hr class="small-center-line-post">					
+
+					
+				<div class="standard-page-content">
+<br><h4> Click on any box below to read more about its position in the broader vision</h4>
+<br>								<div class="level-0">
+									<div id="expand-main"></div>
+									<script>
+										function isVisible(elem) {
+											if (!(elem instanceof Element)) throw Error('DomUtil: elem is not an element.');
+											const style = getComputedStyle(elem);
+											if (style.display === 'none') return false;
+											if (style.visibility !== 'visible') return false;
+											if (style.opacity < 0.1) return false;
+											if (elem.offsetWidth + elem.offsetHeight + elem.getBoundingClientRect().height +
+												elem.getBoundingClientRect().width === 0) {
+												return false;
+											}
+											const elemCenter   = {
+												x: elem.getBoundingClientRect().left + elem.offsetWidth / 2,
+												y: elem.getBoundingClientRect().top + elem.offsetHeight / 2
+											};
+											if (elemCenter.x < 0) return false;
+											if (elemCenter.x > (document.documentElement.clientWidth || window.innerWidth)) return false;
+											if (elemCenter.y < 0) return false;
+											if (elemCenter.y > (document.documentElement.clientHeight || window.innerHeight)) return false;
+											let pointContainer = document.elementFromPoint(elemCenter.x, elemCenter.y);
+											do {
+												if (pointContainer === elem) return true;
+											} while (pointContainer = pointContainer.parentNode);
+											return false;
+										}
+
+
+										var main = document.getElementsByClassName("main-container")[0];
+										var ws = document.getElementsByClassName("left-placeholder")[0];
+										var expand = document.getElementById("expand-main");
+										var x = window.matchMedia("(max-width: 768px)");
+										const expandMain = () => { 
+											jQuery(".diagram-blurb").resizeText();
+											x = window.matchMedia("(max-width: 768px)")
+												if(x.matches){
+													var expand = document.getElementById("expand-main");
+													if(expand){
+														main.classList.add("container-fluid");
+														main.classList.remove("container");
+
+														ws.classList.add("d-none");
+													}
+												}else{
+													main.classList.remove("container-fluid");
+													main.classList.add("container");
+
+													ws.classList.remove("d-none");
+												}
+										}
+										window.addEventListener("resize", function(event) {
+											expandMain()
+										})
+
+										function transitionEndEventName () {
+											var i,
+												undefined,
+												el = document.createElement('div'),
+												transitions = {
+													'transition':'transitionend',
+													'OTransition':'otransitionend',  // oTransitionEnd in very old Opera
+													'MozTransition':'transitionend',
+													'WebkitTransition':'webkitTransitionEnd'
+												};
+
+											for (i in transitions) {
+												if (transitions.hasOwnProperty(i) && el.style[i] !== undefined) {
+													return transitions[i];
+												}
+											}
+
+										}
+
+										const resizeIt = () => { jQuery(".diagram-blurb").resizeText() }
+
+										const manageFlip = (the_id, flip_dir, section_ids) => { 
+
+											window.clearInterval(resizeIt);
+											window.setInterval(resizeIt, 600);
+
+											var layer_connectors = {
+												"saas-flip" : ["sass-to-paas"],
+												"paas-flip" : ['paas-to-iaas', 'osb-to-paas', 'sass-to-paas'],
+												"data-services-flip" : ['data-to-iaas', 'osb-to-data'],
+												"iaas-flip": ['data-to-iaas', 'paas-to-iaas'],
+												"osb-flip": ['osb-to-paas', 'osb-to-data']
+											}
+
+
+											var transitionEnd = transitionEndEventName();
+											var flip_card = document.getElementById(the_id);
+											var flip_inner = flip_card.getElementsByClassName("flip-card-inner")
+											var flip_front = flip_card.getElementsByClassName("front")
+
+											flip_card.addEventListener(transitionEnd, function () {
+												var do_not_remove = {}
+												for (var key of Object.keys(layer_connectors)) {
+													var flip_id = document.getElementById(key);
+													if (flip_id.classList.contains("flip-card")) {
+														layer_connectors[key].forEach(element => do_not_remove[element]=1);
+													}
+												}	
+												for (const el of flip_front) {
+
+													if ( isVisible(el) && ! flip_card.classList.contains("flip-card")){
+														for (const id of section_ids) {
+															var section = document.getElementById(id)
+															if (!(id in do_not_remove)) {
+																section.classList.remove("d-none")
+															}
+														}
+													}else{
+														for (const id of section_ids) {
+															var section = document.getElementById(id)
+															section.classList.add("d-none")
+														}
+													}
+												}
+
+											}, false);
+
+											for (const id of section_ids) {
+												var section = document.getElementById(id)
+												section.classList.add("d-none")
+												}
+											if (flip_card.classList.contains("flip-card")){
+												
+												flip_card.classList.remove("flip-card")
+												for (const el of flip_inner) {
+													el.classList.remove(flip_dir)
+												}
+											}else{
+												flip_card.classList.add("flip-card")
+												for (const el of flip_inner) {
+													el.classList.add(flip_dir)
+												}
+											}	
+										}
+									</script>
+									<div class="row">
+										<div class="col-12 dia-layer" id="saas-layer">
+											<div class="row vertical" id="saas-flip" onclick="manageFlip(this.id, 'flip-x', ['sass-to-paas'])">
+												<div class="col-12">
+													<div class="col-12 flip-card-inner">
+														<div class="dia-content-wrapper front">
+															<div class="construct-header">
+																SaaS
+															</div>
+														</div>
+														<div class="dia-content-wrapper back back-x">
+															<div class="diagram-blurb">
+																SaaS is the software interfaces you're sharing with a customer. Either internal, or external. This is your product.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 dia-layer" id="paas-layer">
+											<div class="row">
+												<div class="col-12">
+													<div class="row">
+														<div class="col-4 prel" id="data-services-flip" onclick="manageFlip(this.id, 'flip-y', ['data-to-iaas', 'osb-to-data'])">
+															<div class="section-container" id="data-to-iaas">
+																<div class="section-wrapper">
+																	<div class="section-left">
+																	
+																	</div>
+																	<div class="section-right">
+
+																	</div>
+																	<div class="cover-left">
+																	
+																	</div>
+																	<div class="cover-center">
+
+																	</div>
+																	<div class="cover-right">
+
+																	</div>
+																</div>
+															</div>
+
+															<div class="h-100 row p-0">
+																<div class="front h-100 col-12 p-fix">
+																	<div class="dia-content-wrapper center" id="data-services">
+																		<div class="row">
+																			<div class="col-12">
+																				<div class="construct-header">Data&nbsp;Services</div> 
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="services-box">
+																				<div class="service-logo-container">
+																					<div class="service-logo-wrapper">
+																						<img class="service-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/mariadb.png">
+																					</div>
+																				</div>
+																				<div class="service-logo-container">
+																					<div class="service-logo-wrapper">
+																						<img class="service-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/redis.png">
+																					</div>
+																				</div>
+																				<div class="service-logo-container">
+																					<div class="service-logo-wrapper small-logo">
+																						<img class="service-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/cass.png">
+																					</div>
+																				</div>
+																				<div class="service-logo-container">
+																					<div class="service-logo-wrapper small-logo">
+																						<img class="service-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/elastic.png">
+																					</div>
+																				</div>
+																			</div> 
+																		</div>
+																	</div>
+																</div>
+																<div class="back h-100 col-12 p-fix">
+																	<div class="h-100 content-border t-fix">
+																		<div class="diagram-blurb small-max">
+																			Data services is tricky especially if you're going to build your own. Since the open service broker can be built in any language, you could front it with path based routing and split your team into capabilities based on language and service understanding. You need conversations around persistence (aws volumes not crossing zones etc). Do you even need to broker services if you're just doing cloud native? Ultimately even if you're just going to broker a cloud native data service, I think it's worth your time to put it into a central kubernetes cluster, and then even if that cluster is just using something like crossplane it's still the central point of visibility for who has what services.
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-4 prel" id="osb-flip" onclick="manageFlip(this.id, 'flip-x', ['osb-to-paas', 'osb-to-data'])">
+															<div class="section-container" id="osb-to-paas">
+																<div class="section-wrapper-x">
+																	<div class="section-top">
+																	
+																	</div>
+																	<div class="section-bottom">
+
+																	</div>
+																	<div class="cover-top">
+																	
+																	</div>
+																	<div class="cover-x">
+
+																	</div>
+																	<div class="cover-bottom">
+
+																	</div>
+																</div>
+															</div>
+															<div class="section-container" id="osb-to-data">
+																<div class="section-wrapper-x">
+																	<div class="section-top">
+																	
+																	</div>
+																	<div class="section-bottom">
+
+																	</div>
+																	<div class="cover-top">
+																	
+																	</div>
+																	<div class="cover-x">
+
+																	</div>
+																	<div class="cover-bottom">
+
+																	</div>
+																</div>
+															</div>
+															<div class="h100 flip-card-inner">
+																<div class="h-100 col-12 front">
+																	<div class="dia-content-wrapper center" id="open-service-broker">
+																		<div class="h-100 col-12 front">
+																			<div class="row">
+																				<div class="col-12">
+																					<div class="osb-logo-container">
+																						<div class="osb-logo-wrapper">
+																							<img class="osb-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/osb.png">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="row lang-logo-full center">
+																				<div class="col-6">
+																					<div class="row">
+																						<div class="col-12">
+																							<div class="lang-logo-container">
+																								<div class="lang-logo-wrapper">
+																									<img class="lang-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/ruby.png">
+																								</div>
+																							</div>
+																						</div>	
+																					</div>	
+																					<div class="row">
+																						<div class="col-12">
+																							<div class="lang-logo-container">
+																								<div class="lang-logo-wrapper">
+																									<img class="lang-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/python.png">
+																								</div>
+																							</div>			
+																						</div>																		
+																					</div>	
+																				</div>
+																				<div class="col-6">
+																					<div class="row">
+																						<div class="col-12">
+																							<div class="lang-logo-container">
+																								<div class="lang-logo-wrapper">
+																									<img class="lang-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/go.png">
+																								</div>
+																							</div>
+																						</div>
+																					</div>	
+																					<div class="row">
+																						<div class="col-12">
+																							<div class="lang-logo-container">
+																								<div class="lang-logo-wrapper">
+																									<img class="lang-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/node.png">
+																								</div>
+																							</div>
+																						</div>
+																					</div>	
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="h-100 col-12 back content-border">
+																	<div class="diagram-blurb">
+																	The open service broker is simply a contract between a service provider and a platform on what the platform will provide when it requests a service and what will be handed back from the service provider. It can be written in any language and there's examples out there to get you started. 
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-4 prel" id="paas-flip" onclick="manageFlip(this.id, 'flip-y', ['paas-to-iaas', 'osb-to-paas', 'sass-to-paas'])">
+															<div class="section-container" id="sass-to-paas">
+																<div class="section-wrapper">
+																	<div class="section-left">
+																	
+																	</div>
+																	<div class="section-right">
+
+																	</div>
+																	<div class="cover-left">
+																	
+																	</div>
+																	<div class="cover-center">
+
+																	</div>
+																	<div class="cover-right">
+
+																	</div>
+																</div>
+															</div>	
+															<div class="section-container" id="paas-to-iaas">
+																<div class="section-wrapper">
+																	<div class="section-left">
+																	
+																	</div>
+																	<div class="section-right">
+
+																	</div>
+																	<div class="cover-left">
+																	
+																	</div>
+																	<div class="cover-center">
+
+																	</div>
+																	<div class="cover-right">
+
+																	</div>
+																</div>
+															</div>	
+															<div class="h-100 flip-card-inner">
+																<div class="h-100 front col-12">
+																	<div class="dia-content-wrapper center" id="paas">
+																		<div class="front h-100 col-12">
+																			<div class="row">
+																				<div class="col-12">
+																					<div class="construct-header">PaaS</div> 
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-12">
+																					<div class="rancher-box">
+																						<div class="rancher-logo-container center">
+																							<div class="rancher-logo-wrapper">
+																								<img class="rancher-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/rancher-logo-horiz-color.png">
+																							</div>
+																						</div>
+																						<div class="paas-logo-container">
+																							<div class="paas-logo-wrapper">
+																								<img class="paas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/rke.png">
+																							</div>
+																						</div>
+																						<div class="paas-logo-container">
+																							<div class="paas-logo-wrapper">
+																								<img class="paas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/gke.png">
+																							</div>
+																						</div>
+																						<div class="paas-logo-container">
+																							<div class="paas-logo-wrapper">
+																								<img class="paas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/aks.png">
+																							</div>
+																						</div>
+																						<div class="paas-logo-container">
+																							<div class="paas-logo-wrapper">
+																								<img class="paas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/eks.png">
+																							</div>
+																						</div>
+																					</div> 
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="center" id="paas">
+																	<div class="back h-100 col-12 content-border">
+																		<div class="diagram-blurb">
+																			Kubernetes has emerged as the leading container orchestration platform. You could explore google anthos, eks anywhere, or vmware tanzu. In my experience though rancher has been in the space longer and leads the pack in providing a unified interface and rbac to clusters spanning multiple IaaS providers. Building a central platform gives you enhanced operational visibility and an increase in organizational velocity.
+																		</div>				
+																	</div>
+																</div>	
+															</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</div>	
+									<div class="row vertical" id="iaas-flip" onclick="manageFlip(this.id, 'flip-x', ['paas-to-iaas', 'data-to-iaas'])">
+										<div class="col-12 dia-layer" id="iaas-layer">
+											<div class="h-100 col-12 flip-card-inner">
+												<div class="dia-content-wrapper front">
+													<div class="row">
+														<div class="col-12">
+															<div class="construct-header">IaaS</div>
+														</div>	
+													</div>	
+													<div class="row">
+														<div class="col-3">
+															<div class="iaas-logo-container">
+																<div class="iaas-logo-wrapper">
+																	<img class="iaas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/gcp.png">
+																</div>														
+															</div>
+														</div>
+														<div class="col-3">
+															<div class="iaas-logo-container">
+																<div class="iaas-logo-wrapper">
+																	<img class="iaas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/azure.png">
+																</div>
+															</div>
+														</div>											
+														<div class="col-3">
+															<div class="iaas-logo-container">
+																<div class="iaas-logo-wrapper">
+																	<img class="iaas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/aws.png">
+																</div>
+															</div>	
+														</div>				
+														<div class="col-3">
+															<div class="iaas-logo-container">
+																<div class="iaas-logo-wrapper">
+																	<img class="iaas-logo" src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/images/diagram/vmware.png">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="dia-content-wrapper back back-x p-t-1">
+												<div class="diagram-blurb">
+													In my opinion IaaS is the easiest. Not that there can't be nuances, but it's still just everything you've already done through a new interface. I need a server, load balancer, disk, a network etc. It's still the same thing at its core it's been over the last decade. The biggest challenge tends to be vsphere because of organizational hurdles. Kubernetes often represents a paradigm shift that many teams are ill equipped to handle. Things like shifting away from traditional firewall models to dynamic network policies with something like istio/envoy can be a hard sell with traditional security teams. 
+												</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+<br>
+<p>Edit: A chrome update has broken the face visibility of the cards. Browser support for this functionality is always tenuous at best as it is. As of now, the page is best viewed via safari or firefox<br><br>First note that this is not plugins, site builders, copy paste. This is a pure html/css/js diagram that I incepted and built from scratch. It&#8217;s my vision on a broader platform architecture articulated through code. <br><br>This post is a culmination of 10 years experience across some of the largest companies on the planet into a vision that provides a cloud agnostic roadmap for application deployments. It&#8217;s geared more to organizations that have disparate business units functioning across multiple infrastructure providers seeking a single pane of glass from an operations perspective. <br><br>A simplified take on what you need for an application is usually a data service, and somewhere to run your code. Most enterprises are running their code in some sort of platform (Cloud Foundry, Kubernetes). That or they&#8217;re realizing that the traditional method of having an infrastructure team stand up VMs, networking setting up vlans, and negotiating red tape from security isn&#8217;t working. It&#8217;s not scalable or hinders velocity. It&#8217;s possible that they&#8217;re running shared databases and feeling the fallout from noisy neighbors or they&#8217;ve given developers free rein and are feeling the heat from ballooning costs of cloud provided data services. </p>
+
+
+
+<p>The solution to these problems is to build a platform that spans multiple cloud providers. This should in theory allow you to migrate nimbly across providers barring some esoteric data service in niche spaces, in turn giving you an ability to organically reduce cloud spend, or negotiate lower costs depending on your account spend (I&#8217;ve been at companies spending hundreds of thousands a month). <br><br>There&#8217;s multiple Kubernetes aggregate providers out there. <a href="http://rancher.com/" target="_blank" rel="noreferrer noopener" title="rancher.com">Rancher</a>, Google Anthos, EKS anywhere, VMware Tanzu. Google Anthos at least used to have requirements for an F5 coming into your on prem installations, VMware products are always obnoxious because they&#8217;re closed source and even the tooling is hidden behind login and marketing walls, EKS anywhere (and the others) are newer products and it never feels good feeling as if you&#8217;re using a beta product. Rancher has a few small hiccups, but I can tell you it works in a production environment and solves the need of an central pane of glass for Kubernetes operations.  Whether your developers are on prem or any cloud provider, its one location for all your clusters. <br><br>The <a href="https://www.openservicebrokerapi.org/" target="_blank" rel="noreferrer noopener" title="https://www.openservicebrokerapi.org/">Open Service Broker</a> is a specification for brokering a data service in any language. Essentially it&#8217;s code that says:<br><br> OSB: &#8220;This is a catalog of services I provide&#8221;<br>Platform: &#8220;I&#8217;ll take service x&#8221;<br>OSB: Generates a service based on how ever you&#8217;ve chosen to write your code. You could go ask aws/gcp/azure etc for a data service and simply hand it back to the cluster. You could create a data services cluster and manage those via helm etc. Then hand those data services back once they&#8217;re provisioned. It&#8217;s literally anything you want it to be.<br>OSB: &#8220;Here&#8217;s the IP/URL and connection credentials for the service you requested&#8221;<br><br>Even if you&#8217;re just brokering a cloud native data service, I think there&#8217;s a lot of value in it. I&#8217;ve not yet seen anyone handle infrastructure tagging properly in a way that it can&#8217;t be bypassed or ignored. With the OSB you always know which services exist and who requested them. It also gives a similar interface to the developer for requesting a service across any provider.<br><br>The data services conversation is one that&#8217;s difficult to have agnostically. On prem you need storage providers if you&#8217;re going to build that out. I&#8217;ve seen situations where hardware is too old to upgrade the esxi hosts so then you have to look at third party storage layers like <a href="http://PortWorx.com/" title="PortWorx.com" target="_blank" rel="noreferrer noopener">PortWorx</a>. Now you need a few engineers to manage just that. Maybe you have them run this in the cloud too because AWS volumes cannot span AZs so you have to set up affinities for those volumes and it just gets muddy. If we&#8217;re going to have this magic platform where nodes come up and down, I want my storage to be able to move with that. Then the question is what are replication times across the az&#8217;s and can you build latency sensitive data services on top of that etc. <br><br>It&#8217;s a lot of work and you can lose time in the nuances, but if your cloud spend is a 50k+ a month, I think it&#8217;s a viable strategy to shift that over to labor and explore building these layers yourself. Then you touch down in any cloud, you&#8217;re going to lay down a storage layer, services layer and kubernetes. From here your developers have a unified interface to any environment. <br><br>For smaller enterprises, even if you&#8217;re pursuing this in one provider, I think it&#8217;s still a good value proposition. Chances are you&#8217;re going to continue to grow and it will set a strong foundation for that. You might leave the service broker on the back burner and just use cross plane. </p>
+</div>
+
+
+				
+
+
+				</div>
+<!-- .entry-content -->
+				</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+			
+			<div class="entry-content-wrapper">
+			<div class="entry-content next-post-content">
+			<div class="row">
+			<div class="col-6">
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links">
+<div class="nav-previous"><a href="https://HireRyan.Today/2021/08/24/removing-the-login-box-from-mediawiki/" rel="prev"><p class="meta-nav"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 13v-2H8l4-4-1-2-7 7 7 7 1-2-4-4z" fill="currentColor"></path></svg>Previous post</p>
+<p class="post-title">Removing the Login Box From Mediawiki</p></a></div>
+<div class="nav-next"><a href="https://HireRyan.Today/2021/10/04/modifying-docker-image-layers-in-real-time-on-macos/" rel="next"><p class="meta-nav">Next post<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m4 13v-2h12l-4-4 1-2 7 7-7 7-1-2 4-4z" fill="currentColor"></path></svg></p>
+<p class="post-title">Modifying Docker Image Layers in Real Time on Macos</p></a></div>
+</div>
+	</nav>
+			</div>
+			<div class="col-6">
+			
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links">
+<div class="nav-previous"><a href="https://HireRyan.Today/2021/08/24/removing-the-login-box-from-mediawiki/" rel="prev"><p class="meta-nav"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 13v-2H8l4-4-1-2-7 7 7 7 1-2-4-4z" fill="currentColor"></path></svg>Previous post</p>
+<p class="post-title">Removing the Login Box From Mediawiki</p></a></div>
+<div class="nav-next"><a href="https://HireRyan.Today/2021/10/04/modifying-docker-image-layers-in-real-time-on-macos/" rel="next"><p class="meta-nav">Next post<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m4 13v-2h12l-4-4 1-2 7 7-7 7-1-2 4-4z" fill="currentColor"></path></svg></p>
+<p class="post-title">Modifying Docker Image Layers in Real Time on Macos</p></a></div>
+</div>
+	</nav>
+				</div>
+				</div>
+				</div>
+				</div>
+
+								</div>
+				</div>
+
+			</div>
+			<!-- <div class="col-xl-2 d-none d-xl-block p-1 right-placeholder">
+							</div> -->
+		</div>
+	</div>
+			</article><!-- #post-119 -->
+			</main><!-- #main -->
+		</div>
+<!-- #primary -->
+	</div>
+<!-- #content -->
+
+
+</div>
+<!-- #page -->
+
+        <span class="ssp-id" style="display:none">119</span>
+		<script>document.body.classList.remove("no-js");</script>	<script>if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}</script>
+	<script id="twenty-twenty-one-ie11-polyfills-js-after">
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.3"><\/scr' + 'ipt>' );
+</script>
+<script src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.3" id="twenty-twenty-one-primary-navigation-script-js"></script>
+<script src="https://HireRyan.Today/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.3" id="twenty-twenty-one-responsive-embeds-script-js"></script>
+<script src="https://HireRyan.Today/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=0A0B0C" id="enlighterjs-js"></script>
+<script id="enlighterjs-js-after">!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);</script>
+<script src="https://HireRyan.Today/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.1.4.1" id="__ytprefsfitvids__-js"></script>
+	<script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);</script>
+	
+</body>
+<script>
+			var current = location.pathname.split('/')[1];
+			if (current == ""){
+				current="/"
+			} else {
+				current = "/" + current
+			}
+			console.log(current)
+			var menuItems = document.getElementsByClassName('nav-link');
+			for (const element of menuItems) {
+				if (element.getAttribute("href") == current) {
+					element.classList.add("active-nav");
+				}
+			}
+
+
+				jQuery.fn.resizeText = function (options) {
+			
+				var settings = jQuery.extend({ maxfont: 20, minfont: .1 }, options);
+
+
+				var style = jQuery('<style>').html('.nodelays ' +
+				'{ ' +
+					'-moz-transition: none !important; ' +
+					'-webkit-transition: none !important;' +
+					'-o-transition: none !important; ' +
+					'transition: none !important;' +
+				'}');
+
+				function shrink(el, fontsize, minfontsize)
+				{
+					if (fontsize < minfontsize) return;
+
+					// if (window.matchMedia("(max-width: 4px)")){
+					// 	fontsize=12.9
+					// }
+
+					el.style.fontSize = fontsize + 'px';
+
+					if (el.scrollHeight > el.offsetHeight) shrink(el, fontsize - 1.02, minfontsize);
+				}
+
+				jQuery('head').append(style);
+
+				jQuery(this).each(function(index, el)
+				{
+						var element = jQuery(el);
+
+						element.addClass('nodelays');
+
+						shrink(el, settings.maxfont, settings.minfont);
+
+						element.removeClass('nodelays');
+					});
+
+					style.remove();
+				}	
+
+
+</script>
+
+<script></script>
+
+</html>

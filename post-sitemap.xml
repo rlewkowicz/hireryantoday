@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on January 31, 2025 at 2:55 pm by All in One SEO - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="https://HireRyan.Today/default.xsl?sitemap=post"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/08/13/custom-wordpress-theme-development/]]></loc>
+		<lastmod><![CDATA[2021-08-24T14:07:46+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/08/20/running-single-node-kubernetes-with-persistent-data/]]></loc>
+		<lastmod><![CDATA[2021-09-13T13:45:19+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/08/24/removing-the-login-box-from-mediawiki/]]></loc>
+		<lastmod><![CDATA[2023-02-15T19:35:04+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/08/30/how-to-achieve-cloud-agnostic-application-deployments-with-kubernetes-and-the-open-service-broker-api/]]></loc>
+		<lastmod><![CDATA[2021-11-08T19:17:49+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/06/01/a-digital-acoustic-guitar/]]></loc>
+		<lastmod><![CDATA[2021-08-26T17:57:29+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/10/04/modifying-docker-image-layers-in-real-time-on-macos/]]></loc>
+		<lastmod><![CDATA[2021-10-05T12:29:59+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2021/11/15/managing-multiple-kube-config-files/]]></loc>
+		<lastmod><![CDATA[2021-11-17T14:43:54+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2023/01/02/just-a-better-gaming-chair-honestly-destiny-2-aim-bot-using-yolov5/]]></loc>
+		<lastmod><![CDATA[2023-01-03T21:04:10+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://i.ytimg.com/vi/PdkdLi9Ylms/maxresdefault.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://hireryan.today/wp-content/uploads/2023/01/Blank-diagram-1-1024x1024.jpeg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2022/03/09/avoiding-shell-quote-hell-and-managing-interpolation-in-nested-quotes/]]></loc>
+		<lastmod><![CDATA[2022-03-09T15:10:06+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://HireRyan.Today/2022/04/09/209/]]></loc>
+		<lastmod><![CDATA[2022-04-09T16:06:16+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+</urlset>
